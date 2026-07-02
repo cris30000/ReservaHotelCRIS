@@ -16,10 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('phone');
+            $table->year('año');
             
 
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            
+
             $table->timestamps();
         });
     }
