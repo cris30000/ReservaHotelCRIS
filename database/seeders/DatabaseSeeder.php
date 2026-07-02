@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
             RoomSeeder::class,
             AgencySeeder::class,
             IndividualSeeder::class,
+            AgencyReservationsSeeder::class,
+            IndividualReservationsSeeder::class,
         ]);
     }
 }

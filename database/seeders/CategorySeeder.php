@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
 use App\Models\Category;
+use Illuminate\Database\Seeder;
 
 class CategorySeeder extends Seeder
 {
@@ -14,16 +13,34 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['description' => '5 Estrellas'],
-            ['description' => '4 Estrellas'],
-            ['description' => '3 Estrellas'],
-            ['description' => '2 Estrellas'],
-            ['description' => '1 Estrella'],
-            ['description' => 'Boutique'],
-            ['description' => 'Eco Hotel'],
-            ['iva' => 21.00],
-            ['iva' => 10.00],
-            ['iva' => 5.00],
+            [
+                'description' => '5 Estrellas',
+                'iva' => 21.00,
+            ],
+            [
+                'description' => '4 Estrellas',
+                'iva' => 21.00,
+            ],
+            [
+                'description' => '3 Estrellas',
+                'iva' => 10.00,
+            ],
+            [
+                'description' => '2 Estrellas',
+                'iva' => 10.00,
+            ],
+            [
+                'description' => '1 Estrella',
+                'iva' => 10.00,
+            ],
+            [
+                'description' => 'Boutique',
+                'iva' => 21.00,
+            ],
+            [
+                'description' => 'Eco Hotel',
+                'iva' => 10.00,
+            ],
         ];
 
         foreach ($categories as $category) {

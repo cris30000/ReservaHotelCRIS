@@ -38,3 +38,9 @@ Route::apiResource('individuals', \App\Http\Controllers\IndividualController::cl
 Route::get('consultas/reservas-agencias', [\App\Http\Controllers\ConsultasController::class, 'reservasAgencias']);
 Route::get('consultas/reservas-particulares', [\App\Http\Controllers\ConsultasController::class, 'reservasParticulares']);
 Route::get('consultas/hoteles-categorias', [\App\Http\Controllers\ConsultasController::class, 'hotelesCategorias']);    
+
+
+//  para pruebas con postman
+
+//http://127.0.0.1:8000/api/categories
+//http://127.0.0.1:8000/api/consultas/reservas-agencias
